@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Cake</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+        .cake {
+            width: 200px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .layer {
+            width: 200px;
+            height: 50px;
+            background-color: #ffcc99;
+            margin: 5px auto;
+            border-radius: 10px;
+        }
+        .candle {
+            width: 5px;
+            height: 20px;
+            background-color: #333;
+            margin: 0 auto;
+            position: relative;
+        }
+        .candle:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid #ffcc00;
+            position: absolute;
+            top: -10px;
+            left: -2px;
+        }
+        .message {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="cake">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="candle"></div>
+        <div class="message">very very sorry My Dear</div>
+    </div>
+</body>
+</html>
